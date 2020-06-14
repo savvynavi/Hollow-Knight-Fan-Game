@@ -13,6 +13,8 @@ public class Board : MonoBehaviour {
 	[SerializeField]
 	GamePieceManager gamePieceManager;
 
+	public static Board instance;
+
 	struct GamePoint {
 		public GameObject Tile;
 		public Vector2 pos;
@@ -20,6 +22,13 @@ public class Board : MonoBehaviour {
 
 	[SerializeField]
 	List<GamePoint> gamePoints;
+
+
+	private void Awake() {
+		if(instance == null) {
+			instance = this;
+		}
+	}
 
 	private void Start() {
 		gamePoints = new List<GamePoint>();

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6954075525581605005}
   - component: {fileID: 8293340776408785644}
   - component: {fileID: 1966069161387956665}
+  - component: {fileID: 2790023488106996680}
   m_Layer: 0
   m_Name: greenPiece
   m_TagString: Untagged
@@ -93,5 +94,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66e30ca6736d3e47aa1ffff7d6b77d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PieceType: 2
+  manager: {fileID: 0}
+  pieceType: 2
   coord: {x: 0, y: 0}
+  targetX: 0
+  targetY: 0
+  initialPosX: 0
+  initialPosY: 0
+  isTargetSet: 0
+--- !u!58 &2790023488106996680
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3498199065002503676}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.45

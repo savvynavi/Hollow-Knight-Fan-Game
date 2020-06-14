@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3070619610186277660}
   - component: {fileID: 9113704927811859141}
   - component: {fileID: 1306053420474605680}
+  - component: {fileID: -201851225081677924}
   m_Layer: 0
   m_Name: bluePiece
   m_TagString: Untagged
@@ -93,5 +94,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66e30ca6736d3e47aa1ffff7d6b77d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PieceType: 1
+  manager: {fileID: 0}
+  pieceType: 1
   coord: {x: 0, y: 0}
+  targetX: 0
+  targetY: 0
+  initialPosX: 0
+  initialPosY: 0
+  isTargetSet: 0
+--- !u!58 &-201851225081677924
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4584678408085346643}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.45

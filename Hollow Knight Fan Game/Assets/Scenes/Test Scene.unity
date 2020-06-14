@@ -190,8 +190,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242436601}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.22311851, y: 0.582799, z: -1.293889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 748600349}
@@ -212,10 +212,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ccb8b241d8587408b26f7a0f44e9c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieces:
+  pools:
   - {fileID: 748600350}
   - {fileID: 102893258}
   - {fileID: 1520706543}
+  snapSpeed: 0.3
 --- !u!1 &748600348
 GameObject:
   m_ObjectHideFlags: 0
